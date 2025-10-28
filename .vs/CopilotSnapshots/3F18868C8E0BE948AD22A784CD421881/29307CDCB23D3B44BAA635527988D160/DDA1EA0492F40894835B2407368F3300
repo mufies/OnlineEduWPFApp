@@ -1,0 +1,6 @@
+﻿{
+  "ConnectionStrings": {
+    "DB": "Server=(localdb)\\mssqllocaldb;Database=StudentManagementDb;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+}
+

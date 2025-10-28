@@ -1,0 +1,6 @@
+﻿{
+  "ConnectionStrings": {
+    "DB": "Server=(local);Database=OnlineEduTask;Uid=sa;Pwd=123;TrustServerCertificate=True"
+  }
+}
+

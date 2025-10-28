@@ -1,0 +1,120 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using StudentManagementBusinessObject;
+
+namespace StudentManagementSystem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                using (var context = new StudentManagementDbContext())
+                {
+                    // Delete and recreate database to ensure clean state
+                    Console.WriteLine("Đang xóa database cũ (nếu có)...");
+                    context.Database.EnsureDeleted();
+                    
+                    Console.WriteLine("Đang tạo database mới...");
+                    bool created = context.Database.EnsureCreated();
+                    
+                    if (created)
+                    {
+                        Console.WriteLine("Database đã được tạo thành công!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Database đã tồn tại.");
+                    }
+
+                    // Seed data
+                    Console.WriteLine("Đang thêm dữ liệu mẫu...");
+                    
+                    // Tạo subject (môn học)
+                    var math = new Subject { SubjectCode = "MATH", SubjectName = "Mathematics", Credits = 3 };
+                    var physics = new Subject { SubjectCode = "PHYS", SubjectName = "Physics", Credits = 2 };
+                    context.Subjects.AddRange(math, physics);
+
+                    // Tạo class (lớp học)
+                    var classA = new StudentClass { ClassCode = "A1", ClassName = "Class 1" };
+                    var classB = new StudentClass { ClassCode = "B1", ClassName = "Class 2" };
+                    context.StudentClasses.AddRange(classA, classB);
+
+                    context.SaveChanges();
+                    Console.WriteLine($"Đã tạo {context.Subjects.Count()} môn học và {context.StudentClasses.Count()} lớp học");
+
+                    // Gán môn học cho lớp (nhiều-nhiều)
+                    context.ClassSubjects.Add(new ClassSubject { ClassId = classA.ClassId, SubjectId = math.SubjectId });
+                    context.ClassSubjects.Add(new ClassSubject { ClassId = classA.ClassId, SubjectId = physics.SubjectId });
+                    context.ClassSubjects.Add(new ClassSubject { ClassId = classB.ClassId, SubjectId = physics.SubjectId });
+                    context.SaveChanges();
+                    Console.WriteLine($"Đã gán môn học cho các lớp");
+
+                    // Tạo sinh viên
+                    var student1 = new Student { StudentCode = "S01", FullName = "Nguyen Van A", Email = "a@gmail.com", ClassId = classA.ClassId };
+                    var student2 = new Student { StudentCode = "S02", FullName = "Tran Thi B", Email = "b@gmail.com", ClassId = classB.ClassId };
+                    context.Students.AddRange(student1, student2);
+                    context.SaveChanges();
+                    Console.WriteLine($"Đã tạo {context.Students.Count()} sinh viên");
+
+                    // Thêm task cho sinh viên
+                    context.Tasks.Add(new StudentManagementBusinessObject.Task { Title = "Làm Toán", Description = "Bài 1,2,3 SGK", IsCompleted = false, StudentId = student1.StudentId, CreatedDate = DateTime.Now });
+                    context.Tasks.Add(new StudentManagementBusinessObject.Task { Title = "Làm Vật lý", Description = "Đề kiểm tra", IsCompleted = false, StudentId = student2.StudentId, CreatedDate = DateTime.Now });
+                    context.SaveChanges();
+                    Console.WriteLine($"Đã tạo {context.Tasks.Count()} tasks");
+
+                    // Tạo user account
+                    context.UserAccounts.Add(new UserAccount { Username = "admin", Password = "123", Role = "Admin" });
+                    context.UserAccounts.Add(new UserAccount { Username = "student1", Password = "123", Role = "Student", StudentId = student1.StudentId });
+                    context.SaveChanges();
+                    Console.WriteLine($"Đã tạo {context.UserAccounts.Count()} user accounts");
+
+                    // Đọc dữ liệu test
+                    Console.WriteLine("\n========================================");
+                    var allClasses = context.StudentClasses.ToList();
+                    Console.WriteLine("== All Classes ==");
+                    foreach (var c in allClasses)
+                        Console.WriteLine($"  {c.ClassId} - {c.ClassCode} - {c.ClassName}");
+
+                    var allStudents = context.Students.ToList();
+                    Console.WriteLine("\n== All Students ==");
+                    foreach (var s in allStudents)
+                        Console.WriteLine($"  {s.StudentId} - {s.StudentCode} - {s.FullName} - ClassId: {s.ClassId}");
+
+                    var allSubjects = context.Subjects.ToList();
+                    Console.WriteLine("\n== All Subjects ==");
+                    foreach (var sub in allSubjects)
+                        Console.WriteLine($"  {sub.SubjectId} - {sub.SubjectCode} - {sub.SubjectName} - {sub.Credits} credits");
+
+                    var allTasks = context.Tasks.ToList();
+                    Console.WriteLine("\n== All Tasks ==");
+                    foreach (var task in allTasks)
+                        Console.WriteLine($"  {task.TaskId} - {task.Title} - StudentId: {task.StudentId}");
+
+                    var allUsers = context.UserAccounts.ToList();
+                    Console.WriteLine("\n== All User Accounts ==");
+                    foreach (var user in allUsers)
+                        Console.WriteLine($"  {user.UserAccountId} - {user.Username} - Role: {user.Role}");
+                }
+
+                Console.WriteLine("\n========================================");
+                Console.WriteLine("✓ Dữ liệu mẫu đã tạo xong!");
+                Console.WriteLine("✓ Database: OnlineEduTask");
+                Console.WriteLine("✓ Server: (local) - SQL Server");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("\n========================================");
+                Console.WriteLine("✗ LỖI: " + ex.Message);
+                Console.WriteLine("\nChi tiết lỗi:");
+                Console.WriteLine(ex.ToString());
+            }
+
+            Console.WriteLine("\n========================================");
+            Console.WriteLine("Nhấn Enter để thoát...");
+            Console.ReadLine();
+        }
+    }
+}

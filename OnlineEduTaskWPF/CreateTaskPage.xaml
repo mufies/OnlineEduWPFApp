@@ -1,0 +1,146 @@
+<Page x:Class="OnlineEduTaskWPF.CreateTaskPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Create Task">
+
+    <Grid Background="White" Margin="20">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel MaxWidth="700">
+                <TextBlock Text="✏️ Create New Task" 
+                          FontSize="24" 
+                          FontWeight="Bold" 
+                          Margin="0,0,0,10"/>
+
+                <TextBlock Text="Assign homework/assignments to your students" 
+                          FontSize="14" 
+                          Foreground="#666"
+                          Margin="0,0,0,20"/>
+
+                <!-- Error Message -->
+                <TextBlock x:Name="txtError" 
+                          Foreground="Red" 
+                          FontWeight="SemiBold"
+                          TextWrapping="Wrap"
+                          Margin="0,0,0,10"
+                          Visibility="Collapsed"/>
+
+                <TextBlock Text="Task Title *" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                <TextBox x:Name="txtTitle" 
+                        Padding="10" 
+                        FontSize="14"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="1"/>
+
+                <TextBlock Text="Description *" FontWeight="SemiBold" Margin="0,15,0,5"/>
+                <TextBox x:Name="txtDescription" 
+                        Padding="10" 
+                        FontSize="14" 
+                        Height="120" 
+                        TextWrapping="Wrap" 
+                        AcceptsReturn="True"
+                        VerticalScrollBarVisibility="Auto"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="1"/>
+
+                <TextBlock Text="Class *" FontWeight="SemiBold" Margin="0,15,0,5"/>
+                <ComboBox x:Name="cmbClass" 
+                         Padding="10" 
+                         FontSize="14"
+                         BorderBrush="#CCCCCC"
+                         BorderThickness="1"/>
+
+                <TextBlock Text="Subject *" FontWeight="SemiBold" Margin="0,15,0,5"/>
+                <ComboBox x:Name="cmbSubject" 
+                         Padding="10" 
+                         FontSize="14"
+                         BorderBrush="#CCCCCC"
+                         BorderThickness="1"/>
+
+                <TextBlock Text="Due Date *" FontWeight="SemiBold" Margin="0,15,0,5"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DatePicker Grid.Column="0"
+                               x:Name="dpDueDate" 
+                               Padding="10" 
+                               FontSize="14"
+                               BorderBrush="#CCCCCC"
+                               BorderThickness="1"/>
+
+                    <TextBlock Grid.Column="1"
+                              Text="Hour:" 
+                              FontSize="14"
+                              VerticalAlignment="Center"
+                              Margin="10,0,5,0"/>
+
+                    <TextBox Grid.Column="2"
+                            x:Name="txtDueHour"
+                            Width="60"
+                            Padding="8"
+                            FontSize="14"
+                            Text="23"
+                            BorderBrush="#CCCCCC"
+                            BorderThickness="1"
+                            Margin="0,0,10,0"/>
+
+                    <StackPanel Grid.Column="3" Orientation="Horizontal">
+                        <TextBlock Text="Min:" 
+                                  FontSize="14"
+                                  VerticalAlignment="Center"
+                                  Margin="0,0,5,0"/>
+
+                        <TextBox x:Name="txtDueMinute"
+                                Width="60"
+                                Padding="8"
+                                FontSize="14"
+                                Text="59"
+                                BorderBrush="#CCCCCC"
+                                BorderThickness="1"/>
+                    </StackPanel>
+                </Grid>
+
+                <TextBlock Text="Max Score *" FontWeight="SemiBold" Margin="0,15,0,5"/>
+                <TextBox x:Name="txtMaxScore" 
+                        Padding="10" 
+                        FontSize="14" 
+                        Text="10"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="1"/>
+
+                <Button Content="Create Task and Assign to Class" 
+                       Background="#4CAF50" 
+                       Foreground="White" 
+                       Padding="20,12" 
+                       Margin="0,30,0,0"
+                       Click="CreateTask_Click"
+                       BorderThickness="0"
+                       FontSize="16"
+                       FontWeight="SemiBold"
+                       Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#4CAF50"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#45a049"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <TextBlock Text="Note: Student tasks will be automatically created for all students in the selected class" 
+                          FontSize="12" 
+                          Foreground="#666"
+                          FontStyle="Italic"
+                          TextWrapping="Wrap"
+                          Margin="0,15,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,196 @@
+<Window x:Class="OnlineEduTaskWPF.ViewTaskDetailsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Task Details" 
+        Height="600" 
+        Width="700"
+        WindowStartupLocation="CenterScreen"
+        Background="White"
+        ResizeMode="CanResize">
+
+    <Grid Margin="30">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Title -->
+                <TextBlock x:Name="txtTitle" 
+                          FontSize="26" 
+                          FontWeight="Bold"
+                          Foreground="#333"
+                          TextWrapping="Wrap"
+                          Margin="0,0,0,10"/>
+
+                <!-- Subject -->
+                <Border Background="#E3F2FD" 
+                       Padding="10,6" 
+                       CornerRadius="4"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,20">
+                    <TextBlock x:Name="txtSubject" 
+                              FontSize="14"
+                              Foreground="#1976D2"
+                              FontWeight="SemiBold"/>
+                </Border>
+
+                <!-- Description -->
+                <TextBlock Text="📋 Description" 
+                          FontSize="16" 
+                          FontWeight="Bold"
+                          Margin="0,0,0,10"/>
+                <Border Background="#F5F5F5" 
+                       Padding="15" 
+                       CornerRadius="6"
+                       Margin="0,0,0,20">
+                    <TextBlock x:Name="txtDescription" 
+                              FontSize="14"
+                              Foreground="#666"
+                              TextWrapping="Wrap"/>
+                </Border>
+
+                <!-- Task Info -->
+                <Grid Margin="0,0,0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="📅 Due Date" 
+                                  FontSize="14" 
+                                  Foreground="#999"
+                                  Margin="0,0,0,5"/>
+                        <TextBlock x:Name="txtDueDate" 
+                                  FontSize="16"
+                                  FontWeight="SemiBold"
+                                  Foreground="#F44336"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="🎯 Max Score" 
+                                  FontSize="14" 
+                                  Foreground="#999"
+                                  Margin="0,0,0,5"/>
+                        <TextBlock x:Name="txtMaxScore" 
+                                  FontSize="16"
+                                  FontWeight="SemiBold"
+                                  Foreground="#4CAF50"/>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Status -->
+                <StackPanel x:Name="pnlStatus" Margin="0,0,0,20">
+                    <TextBlock Text="📊 Status" 
+                              FontSize="16" 
+                              FontWeight="Bold"
+                              Margin="0,0,0,10"/>
+                    <Border x:Name="borderStatus"
+                           Padding="12,8" 
+                           CornerRadius="6"
+                           HorizontalAlignment="Left">
+                        <TextBlock x:Name="txtStatus" 
+                                  FontSize="15"
+                                  FontWeight="SemiBold"
+                                  Foreground="White"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- Submission Content -->
+                <StackPanel x:Name="pnlSubmission" Visibility="Collapsed" Margin="0,0,0,20">
+                    <TextBlock Text="📝 Your Submission" 
+                              FontSize="16" 
+                              FontWeight="Bold"
+                              Margin="0,0,0,10"/>
+                    <Border Background="#E8F5E9" 
+                           Padding="15" 
+                           CornerRadius="6"
+                           BorderBrush="#4CAF50"
+                           BorderThickness="1">
+                        <StackPanel>
+                            <TextBlock x:Name="txtSubmittedDate" 
+                                      FontSize="12"
+                                      Foreground="#666"
+                                      Margin="0,0,0,10"/>
+                            <TextBlock x:Name="txtSubmissionContent" 
+                                      FontSize="14"
+                                      Foreground="#333"
+                                      TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <!-- Score and Feedback -->
+                <StackPanel x:Name="pnlGrade" Visibility="Collapsed" Margin="0,0,0,20">
+                    <TextBlock Text="⭐ Grade &amp; Feedback" 
+                              FontSize="16" 
+                              FontWeight="Bold"
+                              Margin="0,0,0,10"/>
+                    
+                    <!-- Score -->
+                    <Border Background="#FFF3E0" 
+                           Padding="15" 
+                           CornerRadius="6"
+                           BorderBrush="#FF9800"
+                           BorderThickness="1"
+                           Margin="0,0,0,10">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Your Score: " 
+                                      FontSize="16"
+                                      Foreground="#666"/>
+                            <TextBlock x:Name="txtScore" 
+                                      FontSize="20"
+                                      FontWeight="Bold"
+                                      Foreground="#FF9800"/>
+                            <TextBlock Text=" / " 
+                                      FontSize="16"
+                                      Foreground="#666"
+                                      Margin="5,0"/>
+                            <TextBlock x:Name="txtScoreMax" 
+                                      FontSize="20"
+                                      FontWeight="Bold"
+                                      Foreground="#666"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Feedback -->
+                    <StackPanel x:Name="pnlFeedback" Visibility="Collapsed">
+                        <TextBlock Text="Teacher's Feedback:" 
+                                  FontSize="14" 
+                                  FontWeight="SemiBold"
+                                  Margin="0,0,0,8"/>
+                        <Border Background="#F5F5F5" 
+                               Padding="15" 
+                               CornerRadius="6">
+                            <TextBlock x:Name="txtFeedback" 
+                                      FontSize="14"
+                                      Foreground="#333"
+                                      TextWrapping="Wrap"
+                                      FontStyle="Italic"/>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Close Button -->
+                <Button Content="Close"
+                       Click="btnClose_Click"
+                       Background="#2196F3"
+                       Foreground="White"
+                       Padding="30,12"
+                       FontSize="15"
+                       BorderThickness="0"
+                       Cursor="Hand"
+                       HorizontalAlignment="Center"
+                       Margin="0,20,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#2196F3"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#1976D2"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

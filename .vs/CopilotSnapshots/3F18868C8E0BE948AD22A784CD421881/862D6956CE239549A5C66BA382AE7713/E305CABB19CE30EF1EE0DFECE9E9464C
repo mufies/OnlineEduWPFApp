@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using StudentManagementBusinessObject;
+
+namespace StudentManagementSystem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            using (var context = new StudentManagementDbContext())
+            {
+                // Tạo subject (môn học)
+                var math = new Subject { SubjectCode = "MATH", SubjectName = "Mathematics", Credits = 3 };
+                var physics = new Subject { SubjectCode = "PHYS", SubjectName = "Physics", Credits = 2 };
+                context.Subjects.AddRange(math, physics);
+
+                // Tạo class (lớp học)
+                var classA = new StudentClass { ClassCode = "A1", ClassName = "Class 1" };
+                var classB = new StudentClass { ClassCode = "B1", ClassName = "Class 2" };
+                context.StudentClasses.AddRange(classA, classB);
+
+                context.SaveChanges();
+
+                // Gán môn học cho lớp (nhiều-nhiều)
+                context.ClassSubjects.Add(new ClassSubject { StudentClassId = classA.StudentClassId, SubjectId = math.SubjectId });
+                context.ClassSubjects.Add(new ClassSubject { StudentClassId = classA.StudentClassId, SubjectId = physics.SubjectId });
+                context.ClassSubjects.Add(new ClassSubject { StudentClassId = classB.StudentClassId, SubjectId = physics.SubjectId });
+                context.SaveChanges();
+
+                // Tạo sinh viên
+                var student1 = new Student { StudentCode = "S01", FullName = "Nguyen Van A", Email = "a@gmail.com", StudentClassId = classA.StudentClassId };
+                var student2 = new Student { StudentCode = "S02", FullName = "Tran Thi B", Email = "b@gmail.com", StudentClassId = classB.StudentClassId };
+                context.Students.AddRange(student1, student2);
+                context.SaveChanges();
+
+                // Thêm task cho sinh viên
+                context.Tasks.Add(new Task { Title = "Làm Toán", Description = "Bài 1,2,3 SGK", IsCompleted = false, StudentId = student1.StudentId, CreatedDate = DateTime.Now });
+                context.Tasks.Add(new Task { Title = "Làm Vật lý", Description = "Đề kiểm tra", IsCompleted = false, StudentId = student2.StudentId, CreatedDate = DateTime.Now });
+                context.SaveChanges();
+
+                // Tạo user account
+                context.UserAccounts.Add(new UserAccount { Username = "admin", Password = "123", Role = "Admin" });
+                context.UserAccounts.Add(new UserAccount { Username = "student1", Password = "123", Role = "Student", StudentId = student1.StudentId });
+                context.SaveChanges();
+
+                // Đọc dữ liệu test
+                var allClasses = context.StudentClasses.ToList();
+                Console.WriteLine("== All Classes ==");
+                foreach (var c in allClasses)
+                    Console.WriteLine($"{c.StudentClassId}-{c.ClassName}");
+
+                var allStudents = context.Students.ToList();
+                Console.WriteLine("== All Students ==");
+                foreach (var s in allStudents)
+                    Console.WriteLine($"{s.StudentId}-{s.FullName}-{s.StudentClassId}");
+            }
+            Console.WriteLine("Dữ liệu mẫu đã tạo xong!");
+            Console.ReadLine();
+        }
+    }
+}

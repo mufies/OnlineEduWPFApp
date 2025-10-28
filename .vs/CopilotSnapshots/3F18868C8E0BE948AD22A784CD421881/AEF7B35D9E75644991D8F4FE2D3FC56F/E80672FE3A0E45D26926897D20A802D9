@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Microsoft.EntityFrameworkCore;
+
+namespace StudentManagementBusinessObject
+{
+    public class StudentManagementDbContext : DbContext
+    {
+        public DbSet<Student> Students { get; set; }
+        public DbSet<StudentClass> StudentClasses { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<ClassSubject> ClassSubjects { get; set; }
+        public DbSet<Task> Tasks { get; set; }
+        public DbSet<UserAccount> UserAccounts { get; set; }
+
+        public StudentManagementDbContext() { }
+
+        public StudentManagementDbContext(DbContextOptions<StudentManagementDbContext> options)
+            : base(options) { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // Sửa lại connection string tùy theo môi trường của bạn (SQL Server, LocalDB...)
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=StudentManagementDb;Trusted_Connection=True;");
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Cấu hình key phức của bảng many-to-many ClassSubject
+            modelBuilder.Entity<ClassSubject>()
+                .HasKey(cs => new { cs.ClassId, cs.SubjectId });
+
+            modelBuilder.Entity<ClassSubject>()
+                .HasOne(cs => cs.StudentClass)
+                .WithMany(c => c.ClassSubjects)
+                .HasForeignKey(cs => cs.ClassId);
+
+            modelBuilder.Entity<ClassSubject>()
+                .HasOne(cs => cs.Subject)
+                .WithMany(s => s.ClassSubjects)
+                .HasForeignKey(cs => cs.SubjectId);
+
+
+            // Có thể thêm các cấu hình khác nếu muốn...
+        }
+    }
+}

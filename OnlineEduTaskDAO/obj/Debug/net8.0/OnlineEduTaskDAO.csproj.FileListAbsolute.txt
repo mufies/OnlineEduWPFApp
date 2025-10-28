@@ -1,0 +1,16 @@
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\bin\Debug\net8.0\appsettings.json
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\bin\Debug\net8.0\OnlineEduTaskDAO.deps.json
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\bin\Debug\net8.0\OnlineEduTaskDAO.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\bin\Debug\net8.0\OnlineEduTaskDAO.pdb
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\bin\Debug\net8.0\StudentManagementBusinessObject.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\bin\Debug\net8.0\StudentManagementBusinessObject.pdb
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.csproj.AssemblyReference.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.AssemblyInfoInputs.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.AssemblyInfo.cs
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.csproj.CoreCompileInputs.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEd.FDBD3B2E.Up2Date
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\refint\OnlineEduTaskDAO.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\OnlineEduTaskDAO.pdb
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskDAO\obj\Debug\net8.0\ref\OnlineEduTaskDAO.dll

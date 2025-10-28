@@ -1,0 +1,80 @@
+<Window x:Class="OnlineEduTaskWPF.AddSubjectDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add New Subject" 
+        Height="600" 
+        Width="600"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#F5F5F5">
+    
+    <Grid Margin="30">
+        <StackPanel>
+            <TextBlock Text="➕ Add New Subject" 
+                      FontSize="28" 
+                      FontWeight="Bold" 
+                      Foreground="#9C27B0"
+                      Margin="0,0,0,25"/>
+
+            <!-- Subject Code -->
+            <TextBlock Text="Subject Code *" FontWeight="SemiBold" Margin="0,10,0,5" FontSize="14"/>
+            <TextBox x:Name="txtSubjectCode" 
+                    Padding="12" 
+                    FontSize="15"
+                    BorderBrush="#BDBDBD"
+                    BorderThickness="1"/>
+
+            <!-- Subject Name -->
+            <TextBlock Text="Subject Name *" FontWeight="SemiBold" Margin="0,15,0,5" FontSize="14"/>
+            <TextBox x:Name="txtSubjectName" 
+                    Padding="12" 
+                    FontSize="15"
+                    BorderBrush="#BDBDBD"
+                    BorderThickness="1"
+                    TextWrapping="Wrap"
+                    Height="80"
+                    VerticalScrollBarVisibility="Auto"
+                    AcceptsReturn="True"/>
+
+            <!-- Credits -->
+            <TextBlock Text="Credits *" FontWeight="SemiBold" Margin="0,15,0,5" FontSize="14"/>
+            <TextBox x:Name="txtCredits" 
+                    Padding="12" 
+                    FontSize="15"
+                    BorderBrush="#BDBDBD"
+                    BorderThickness="1"/>
+
+            <!-- Error Message -->
+            <TextBlock x:Name="txtError" 
+                      Foreground="Red" 
+                      Margin="0,15,0,0"
+                      TextWrapping="Wrap"
+                      FontSize="13"
+                      Visibility="Collapsed"/>
+
+            <!-- Buttons -->
+            <StackPanel Orientation="Horizontal" 
+                       HorizontalAlignment="Right" 
+                       Margin="0,35,0,0">
+                <Button Content="Cancel" 
+                       Width="120" 
+                       Height="40"
+                       Margin="0,0,15,0"
+                       Background="#E0E0E0"
+                       FontSize="15"
+                       Click="btnCancel_Click"
+                       BorderThickness="0"
+                       Cursor="Hand"/>
+                <Button Content="Add Subject" 
+                       Width="140" 
+                       Height="40"
+                       Background="#9C27B0"
+                       Foreground="White"
+                       FontSize="15"
+                       Click="btnAdd_Click"
+                       BorderThickness="0"
+                       Cursor="Hand"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

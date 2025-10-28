@@ -1,0 +1,15 @@
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.deps.json
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.runtimeconfig.json
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.pdb
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.csproj.AssemblyReference.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.AssemblyInfoInputs.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.AssemblyInfo.cs
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.csproj.CoreCompileInputs.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\refint\StudentManagementBusinessObject.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.pdb
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.genruntimeconfig.cache
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\ref\StudentManagementBusinessObject.dll
+D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\bin\Debug\net8.0\appsettings.json

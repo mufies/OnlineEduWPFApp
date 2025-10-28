@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3245F15-BF4F-4840-A26F-C88E4D978683}|OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj|d:\\fpt\\fa25\\prn212\\code project\\studentmanagementsystem\\onlineedutaskwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3245F15-BF4F-4840-A26F-C88E4D978683}|OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj|solutionrelative:onlineedutaskwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3245F15-BF4F-4840-A26F-C88E4D978683}|OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj|d:\\fpt\\fa25\\prn212\\code project\\studentmanagementsystem\\onlineedutaskwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3245F15-BF4F-4840-A26F-C88E4D978683}|OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj|solutionrelative:onlineedutaskwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10517D4D-3396-4F2B-B0FC-3794C1483138}|TestDb\\TestDb.csproj|d:\\fpt\\fa25\\prn212\\code project\\studentmanagementsystem\\testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10517D4D-3396-4F2B-B0FC-3794C1483138}|TestDb\\TestDb.csproj|solutionrelative:testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "OnlineEduTaskWPF\\MainWindow.xaml",
+              "ToolTip": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\MainWindow.xaml",
+              "RelativeToolTip": "OnlineEduTaskWPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-28T01:58:34.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "OnlineEduTaskWPF\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "OnlineEduTaskWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T01:58:34.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\TestDb\\Program.cs",
+              "RelativeDocumentMoniker": "TestDb\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\TestDb\\Program.cs",
+              "RelativeToolTip": "TestDb\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T01:57:43.834Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
