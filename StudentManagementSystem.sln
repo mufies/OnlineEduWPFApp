@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagementBusinessObject", "StudentManagementBusinessObject\StudentManagementBusinessObject.csproj", "{F8252056-F619-4364-B343-34880057ED92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDb", "TestDb\TestDb.csproj", "{10517D4D-3396-4F2B-B0FC-3794C1483138}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineEduTaskDAO", "OnlineEduTaskDAO\OnlineEduTaskDAO.csproj", "{C7506E56-10B6-4091-88DF-9F88D30FEBBB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineEduTaskRepository", "OnlineEduTaskRepository\OnlineEduTaskRepository.csproj", "{B67CB4C4-2E42-4130-B382-2341ED5F3847}"
@@ -25,10 +23,6 @@ Global
 		{F8252056-F619-4364-B343-34880057ED92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8252056-F619-4364-B343-34880057ED92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8252056-F619-4364-B343-34880057ED92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10517D4D-3396-4F2B-B0FC-3794C1483138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10517D4D-3396-4F2B-B0FC-3794C1483138}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10517D4D-3396-4F2B-B0FC-3794C1483138}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10517D4D-3396-4F2B-B0FC-3794C1483138}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7506E56-10B6-4091-88DF-9F88D30FEBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C7506E56-10B6-4091-88DF-9F88D30FEBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7506E56-10B6-4091-88DF-9F88D30FEBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
