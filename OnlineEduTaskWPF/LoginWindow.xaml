@@ -69,7 +69,7 @@
                           FontWeight="Bold" 
                           Foreground="White"
                           HorizontalAlignment="Center"/>
-                <TextBlock Text="Student Management System" 
+                <TextBlock Text="Education System" 
                           FontSize="12" 
                           Foreground="#E3F2FD"
                           HorizontalAlignment="Center"

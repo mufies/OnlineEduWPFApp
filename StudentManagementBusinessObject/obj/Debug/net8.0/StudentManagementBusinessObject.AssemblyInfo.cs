@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudentManagementBusinessObject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bf399f6dc8a53a5a6701d9f0b96910751d7d1a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3a374e76e161fa0fff261df66a9a199ae6a236d")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudentManagementBusinessObject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudentManagementBusinessObject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
