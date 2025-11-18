@@ -11,4 +11,8 @@
     <ProjectReference Include="..\OnlineEduTaskRepository\OnlineEduTaskRepository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Mscc.GenerativeAI" Version="2.9.2" />
+  </ItemGroup>
+
 </Project>

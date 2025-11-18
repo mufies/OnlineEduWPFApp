@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {}
+    "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+    "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
+        "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
         "projectName": "StudentManagementBusinessObject",
-        "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
+        "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
         "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\obj\\",
+        "outputPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -3132,11 +3132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
+      "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
       "projectName": "OnlineEduTaskRepository",
-      "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
+      "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
       "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\obj\\",
+      "outputPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3157,11 +3157,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj": {
-              "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj"
+            "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj": {
+              "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj"
             },
-            "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
-              "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
+            "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+              "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
             }
           }
         }

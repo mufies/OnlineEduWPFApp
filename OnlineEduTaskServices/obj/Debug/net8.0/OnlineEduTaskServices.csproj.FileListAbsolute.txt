@@ -18,3 +18,24 @@ D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskServices\ob
 D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskServices\obj\Debug\net8.0\refint\OnlineEduTaskServices.dll
 D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.pdb
 D:\FPT\FA25\prn212\code project\StudentManagementSystem\OnlineEduTaskServices\obj\Debug\net8.0\ref\OnlineEduTaskServices.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\appsettings.json
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskServices.deps.json
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskServices.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskServices.pdb
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskDAO.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskRepository.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\StudentManagementBusinessObject.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\StudentManagementBusinessObject.pdb
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskRepository.pdb
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\bin\Debug\net8.0\OnlineEduTaskDAO.pdb
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.csproj.AssemblyReference.cache
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.AssemblyInfoInputs.cache
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.AssemblyInfo.cs
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.csproj.CoreCompileInputs.cache
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.sourcelink.json
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEd.1D2D77C6.Up2Date
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\refint\OnlineEduTaskServices.dll
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\OnlineEduTaskServices.pdb
+D:\Code\OnlineEduWPFApp\OnlineEduTaskServices\obj\Debug\net8.0\ref\OnlineEduTaskServices.dll

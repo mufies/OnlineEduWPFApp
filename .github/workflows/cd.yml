@@ -1,0 +1,47 @@
+name: CD - Deploy Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore StudentManagementSystem.sln
+    
+    - name: Build solution
+      run: dotnet build StudentManagementSystem.sln --configuration Release --no-restore
+    
+    - name: Publish WPF Application
+      run: dotnet publish OnlineEduTaskWPF/OnlineEduTaskWPF.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true
+    
+    - name: Create Release Archive
+      run: Compress-Archive -Path OnlineEduTaskWPF/bin/Release/net8.0-windows/win-x64/publish/* -DestinationPath OnlineEduTaskWPF-${{ github.ref_name }}.zip
+    
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: OnlineEduTaskWPF-${{ github.ref_name }}.zip
+        generate_release_notes: true
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload release artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: release-package
+        path: OnlineEduTaskWPF-${{ github.ref_name }}.zip

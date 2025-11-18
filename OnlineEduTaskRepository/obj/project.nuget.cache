@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nCAlLBpeWeM=",
+  "dgSpecHash": "djBKLXUGM38=",
   "success": true,
-  "projectFilePath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
+  "projectFilePath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mufi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\mufi\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj": {}
+    "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj": {
+    "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj",
+        "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj",
         "projectName": "OnlineEduTaskDAO",
-        "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj",
+        "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj",
         "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\obj\\",
+        "outputPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj": {
+    "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
+        "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
         "projectName": "OnlineEduTaskRepository",
-        "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
+        "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj",
         "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\obj\\",
+        "outputPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -101,11 +101,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskDAO\\OnlineEduTaskDAO.csproj"
               },
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj": {
+    "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj",
+        "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj",
         "projectName": "OnlineEduTaskServices",
-        "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj",
+        "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj",
         "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskServices\\obj\\",
+        "outputPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -173,11 +173,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj"
               },
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
               }
             }
           }
@@ -197,6 +197,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Mscc.GenerativeAI": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -217,14 +223,14 @@
         }
       }
     },
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj": {
+    "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj",
+        "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj",
         "projectName": "OnlineEduTaskWPF",
-        "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj",
+        "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskWPF\\OnlineEduTaskWPF.csproj",
         "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskWPF\\obj\\",
+        "outputPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskWPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -245,14 +251,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskRepository\\OnlineEduTaskRepository.csproj"
               },
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\OnlineEduTaskServices\\OnlineEduTaskServices.csproj"
               },
-              "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
-                "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
+              "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+                "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj"
               }
             }
           }
@@ -295,14 +301,14 @@
         }
       }
     },
-    "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
+    "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
+        "projectUniqueName": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
         "projectName": "StudentManagementBusinessObject",
-        "projectPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
+        "projectPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\StudentManagementBusinessObject.csproj",
         "packagesPath": "C:\\Users\\mufi\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\FA25\\prn212\\code project\\StudentManagementSystem\\StudentManagementBusinessObject\\obj\\",
+        "outputPath": "D:\\Code\\OnlineEduWPFApp\\StudentManagementBusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

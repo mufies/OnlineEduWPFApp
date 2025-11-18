@@ -65,14 +65,59 @@
             </Grid>
         </Border>
 
-        <!-- Summary -->
-        <TextBlock Grid.Row="2"
-                  x:Name="txtSummary"
-                  FontSize="14"
-                  FontWeight="SemiBold"
-                  Foreground="#4CAF50"
-                  Margin="0,0,0,15"
-                  Visibility="Collapsed"/>
+        <!-- Summary and Actions -->
+        <Grid Grid.Row="2" Margin="0,0,0,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Column="0"
+                      x:Name="txtSummary"
+                      FontSize="14"
+                      FontWeight="SemiBold"
+                      Foreground="#4CAF50"
+                      VerticalAlignment="Center"
+                      Visibility="Collapsed"/>
+            
+            <Button Grid.Column="1"
+                   x:Name="btnGradeAll"
+                   Content="🤖 Chấm điểm tất cả bằng AI"
+                   Background="#673AB7"
+                   Foreground="White"
+                   Padding="20,10"
+                   FontSize="14"
+                   FontWeight="SemiBold"
+                   BorderThickness="0"
+                   Click="BtnGradeAll_Click"
+                   Cursor="Hand"
+                   Visibility="Collapsed">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}"
+                                           CornerRadius="6"
+                                           Padding="{TemplateBinding Padding}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#7E57C2"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#BDBDBD"/>
+                                <Setter Property="Foreground" Value="#757575"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Grid>
 
         <!-- Submissions DataGrid -->
         <DataGrid Grid.Row="4" 

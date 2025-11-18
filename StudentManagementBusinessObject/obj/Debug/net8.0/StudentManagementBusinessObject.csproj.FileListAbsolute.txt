@@ -13,3 +13,19 @@ D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusines
 D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.genruntimeconfig.cache
 D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\obj\Debug\net8.0\ref\StudentManagementBusinessObject.dll
 D:\FPT\FA25\prn212\code project\StudentManagementSystem\StudentManagementBusinessObject\bin\Debug\net8.0\appsettings.json
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\bin\Debug\net8.0\appsettings.json
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.deps.json
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.runtimeconfig.json
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.dll
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\bin\Debug\net8.0\StudentManagementBusinessObject.pdb
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.csproj.AssemblyReference.cache
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.AssemblyInfoInputs.cache
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.AssemblyInfo.cs
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.csproj.CoreCompileInputs.cache
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.sourcelink.json
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.dll
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\refint\StudentManagementBusinessObject.dll
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.pdb
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\StudentManagementBusinessObject.genruntimeconfig.cache
+D:\Code\OnlineEduWPFApp\StudentManagementBusinessObject\obj\Debug\net8.0\ref\StudentManagementBusinessObject.dll

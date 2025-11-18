@@ -1,0 +1,51 @@
+name: CI - Build and Test
+
+on:
+  push:
+    branches: [ develop, main ]
+  pull_request:
+    branches: [ develop, main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore StudentManagementSystem.sln
+    
+    - name: Build solution
+      run: dotnet build StudentManagementSystem.sln --configuration Release --no-restore
+    
+    - name: Run unit tests
+      run: dotnet test StudentManagementSystem.sln --no-build --configuration Release --verbosity normal --logger trx --collect:"XPlat Code Coverage"
+    
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: '**/*.trx'
+    
+    - name: Upload code coverage
+      uses: actions/upload-artifact@v4
+      if: success()
+      with:
+        name: code-coverage
+        path: '**/coverage.cobertura.xml'
+    
+    - name: Code coverage report
+      uses: codecov/codecov-action@v4
+      if: success()
+      with:
+        files: '**/coverage.cobertura.xml'
+        fail_ci_if_error: false
+        token: ${{ secrets.CODECOV_TOKEN }}
